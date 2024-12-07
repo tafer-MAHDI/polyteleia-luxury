@@ -24,6 +24,7 @@ const Navigation = () => {
           <a href="#about" className="text-dark hover:text-gold transition-colors">À propos</a>
           <a href="#projects" className="text-dark hover:text-gold transition-colors">Projets</a>
           <a href="#services" className="text-dark hover:text-gold transition-colors">Services</a>
+          <a href="#chairs" className="text-dark hover:text-gold transition-colors">Chaises</a>
           <a href="#contact" className="text-dark hover:text-gold transition-colors">Contact</a>
         </div>
 
@@ -38,6 +39,7 @@ const Navigation = () => {
             <a href="#about" className="text-dark hover:text-gold transition-colors">À propos</a>
             <a href="#projects" className="text-dark hover:text-gold transition-colors">Projets</a>
             <a href="#services" className="text-dark hover:text-gold transition-colors">Services</a>
+            <a href="#chairs" className="text-dark hover:text-gold transition-colors">Chaises</a>
             <a href="#contact" className="text-dark hover:text-gold transition-colors">Contact</a>
           </div>
         </div>
