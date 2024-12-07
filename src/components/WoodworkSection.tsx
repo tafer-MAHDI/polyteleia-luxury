@@ -4,6 +4,7 @@ const woodworkServices = [
   {
     title: "Boiseries sur mesure",
     description: "Création de boiseries murales et moulures personnalisées",
+    image: "https://images.unsplash.com/photo-1486718448742-163732cd1544",
     features: [
       "Panneaux décoratifs",
       "Moulures sculptées",
@@ -14,6 +15,7 @@ const woodworkServices = [
   {
     title: "Menuiserie d'art",
     description: "Réalisation de pièces uniques et ornementations",
+    image: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb",
     features: [
       "Sculptures sur bois",
       "Marqueterie fine",
@@ -24,6 +26,7 @@ const woodworkServices = [
   {
     title: "Aménagements luxueux",
     description: "Création d'intérieurs en bois précieux",
+    image: "https://images.unsplash.com/photo-1431576901776-e539bd916ba2",
     features: [
       "Bibliothèques sur mesure",
       "Dressings de luxe",
@@ -46,17 +49,28 @@ const WoodworkSection = () => {
         
         <div className="grid md:grid-cols-3 gap-8">
           {woodworkServices.map((service, index) => (
-            <div key={index} className="p-8 border border-gold hover:bg-gold/10 transition-colors">
-              <h3 className="text-2xl font-serif mb-4 text-gold">{service.title}</h3>
-              <p className="mb-6 text-light/80">{service.description}</p>
-              <ul className="space-y-3">
-                {service.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center space-x-2">
-                    <Check className="w-5 h-5 text-gold" />
-                    <span className="text-light/90">{feature}</span>
-                  </li>
-                ))}
-              </ul>
+            <div key={index} className="relative overflow-hidden group">
+              <div className="aspect-[4/3] mb-6">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              </div>
+              
+              <div className="p-8 border border-gold hover:bg-gold/10 transition-colors">
+                <h3 className="text-2xl font-serif mb-4 text-gold">{service.title}</h3>
+                <p className="mb-6 text-light/80">{service.description}</p>
+                <ul className="space-y-3">
+                  {service.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-center space-x-2">
+                      <Check className="w-5 h-5 text-gold" />
+                      <span className="text-light/90">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>
