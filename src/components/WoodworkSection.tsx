@@ -1,4 +1,11 @@
 import { Check } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const woodworkServices = [
   {
@@ -8,8 +15,8 @@ const woodworkServices = [
     features: [
       "Panneaux décoratifs",
       "Moulures sculptées",
-      "Corniches sur mesure",
-      "Finitions artisanales"
+      "Habillages muraux",
+      "Finitions nobles"
     ]
   },
   {
@@ -20,7 +27,7 @@ const woodworkServices = [
       "Sculptures sur bois",
       "Marqueterie fine",
       "Restauration d'antiquités",
-      "Dorure sur bois"
+      "Créations contemporaines"
     ]
   },
   {
@@ -30,50 +37,55 @@ const woodworkServices = [
     features: [
       "Bibliothèques sur mesure",
       "Dressings de luxe",
-      "Portes sculptées",
-      "Plafonds à caissons"
+      "Mobilier intégré",
+      "Essences rares"
     ]
   }
 ];
 
 const WoodworkSection = () => {
   return (
-    <section id="woodwork" className="py-20 bg-dark text-light">
+    <section id="woodwork" className="py-20 bg-dark">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-serif mb-4 text-center">
+        <h2 className="text-4xl md:text-5xl font-serif mb-12 text-light text-center">
           Menuiserie d'Art & Bois Décoratif
         </h2>
-        <p className="text-center mb-12 max-w-2xl mx-auto text-light/80">
-          Excellence artisanale dans la création de menuiserie décorative et d'aménagements en bois précieux.
-        </p>
         
-        <div className="grid md:grid-cols-3 gap-8">
-          {woodworkServices.map((service, index) => (
-            <div key={index} className="relative overflow-hidden group">
-              <div className="aspect-[4/3] mb-6">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              </div>
-              
-              <div className="p-8 border border-gold hover:bg-gold/10 transition-colors">
-                <h3 className="text-2xl font-serif mb-4 text-gold">{service.title}</h3>
-                <p className="mb-6 text-light/80">{service.description}</p>
-                <ul className="space-y-3">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center space-x-2">
-                      <Check className="w-5 h-5 text-gold" />
-                      <span className="text-light/90">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          ))}
-        </div>
+        <Carousel className="w-full max-w-5xl mx-auto">
+          <CarouselContent>
+            {woodworkServices.map((service, index) => (
+              <CarouselItem key={index}>
+                <div className="p-1">
+                  <div className="relative group overflow-hidden">
+                    <div className="aspect-[16/9] overflow-hidden">
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent" />
+                    </div>
+                    
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-light">
+                      <h3 className="text-3xl font-serif mb-4 text-gold">{service.title}</h3>
+                      <p className="text-xl mb-6 text-light/90">{service.description}</p>
+                      <ul className="grid grid-cols-2 gap-4">
+                        {service.features.map((feature, idx) => (
+                          <li key={idx} className="flex items-center space-x-2">
+                            <Check className="w-5 h-5 text-gold" />
+                            <span className="text-light/90">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="text-gold border-gold hover:bg-gold hover:text-dark -left-12 md:-left-16" />
+          <CarouselNext className="text-gold border-gold hover:bg-gold hover:text-dark -right-12 md:-right-16" />
+        </Carousel>
       </div>
     </section>
   );
