@@ -22,7 +22,9 @@
 }
 
 .project-card {
-  @apply relative overflow-hidden group cursor-pointer;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .project-card img {
