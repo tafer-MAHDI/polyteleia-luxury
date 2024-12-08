@@ -36,21 +36,25 @@ const Chairs = () => {
   return (
     <section id="chairs" className="py-20 bg-light">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-serif mb-4 text-dark text-center">
+        <h2 className="text-3xl md:text-4xl font-serif mb-4 text-dark text-center animate-[fade-in_1s_ease-out]">
           Collection de Chaises
         </h2>
-        <p className="text-gray text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-gray text-center mb-12 max-w-2xl mx-auto animate-[fade-in_1s_ease-out_0.2s] opacity-0 [animation-fill-mode:forwards]">
           Découvrez notre collection exclusive de chaises et fauteuils de luxe, alliant confort exceptionnel et design raffiné.
         </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {chairs.map((chair) => (
-            <Card key={chair.id} className="hover:shadow-lg transition-shadow duration-300">
+          {chairs.map((chair, index) => (
+            <Card 
+              key={chair.id} 
+              className="hover:shadow-lg transition-all duration-500 hover:-translate-y-2 animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
+              style={{ animationDelay: `${index * 0.2}s` }}
+            >
               <CardHeader>
                 <img
                   src={chair.image}
                   alt={chair.name}
-                  className="w-full h-64 object-cover rounded-t-lg"
+                  className="w-full h-64 object-cover rounded-t-lg transition-transform duration-700 hover:scale-105"
                 />
               </CardHeader>
               <CardContent>
@@ -59,7 +63,7 @@ const Chairs = () => {
                 <p className="text-gold font-semibold mt-4">{chair.price}</p>
               </CardContent>
               <CardFooter>
-                <Button className="w-full bg-gold hover:bg-gold/90 text-white">
+                <Button className="w-full bg-gold hover:bg-gold/90 text-white transition-all duration-300 hover:scale-105">
                   Commander
                 </Button>
               </CardFooter>

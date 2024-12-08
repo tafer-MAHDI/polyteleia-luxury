@@ -3,7 +3,7 @@ const About = () => {
     <section id="about" className="py-20 bg-light">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="animate-[slide-in-right_1s_ease-out] opacity-0 [animation-fill-mode:forwards]">
             <h2 className="text-3xl md:text-4xl font-serif mb-6 text-dark">
               L'excellence dans chaque détail
             </h2>
@@ -14,11 +14,11 @@ const About = () => {
               Chaque projet est une œuvre d'art unique, façonnée selon vos désirs et notre expertise. Nous transformons vos espaces en lieux de vie exceptionnels, où le luxe rencontre la fonctionnalité.
             </p>
           </div>
-          <div className="relative h-[500px]">
+          <div className="relative h-[500px] group">
             <img
               src="/placeholder.svg"
               alt="Interior Design Expertise"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
           </div>
         </div>
