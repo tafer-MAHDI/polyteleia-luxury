@@ -1,17 +1,9 @@
 import { Check } from 'lucide-react';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 
 const woodworkServices = [
   {
     title: "Boiseries sur mesure",
     description: "Création de boiseries murales et moulures personnalisées",
-    image: "https://images.unsplash.com/photo-1486718448742-163732cd1544",
     features: [
       "Panneaux décoratifs",
       "Moulures sculptées",
@@ -22,7 +14,6 @@ const woodworkServices = [
   {
     title: "Menuiserie d'art",
     description: "Réalisation de pièces uniques et ornementations",
-    image: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb",
     features: [
       "Sculptures sur bois",
       "Marqueterie fine",
@@ -33,7 +24,6 @@ const woodworkServices = [
   {
     title: "Aménagements luxueux",
     description: "Création d'intérieurs en bois précieux",
-    image: "https://images.unsplash.com/photo-1431576901776-e539bd916ba2",
     features: [
       "Bibliothèques sur mesure",
       "Dressings de luxe",
@@ -45,47 +35,47 @@ const woodworkServices = [
 
 const WoodworkSection = () => {
   return (
-    <section id="woodwork" className="py-20 bg-dark">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-serif mb-12 text-light text-center">
+    <section id="woodwork" className="relative min-h-screen">
+      {/* Video Background */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute w-full h-full object-cover"
+        >
+          <source src="https://player.vimeo.com/external/459389137.sd.mp4?s=956afd13a312f3a523c58f3f7128b3f94576da80&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+        <div className="absolute inset-0 bg-dark/80" />
+      </div>
+
+      {/* Content */}
+      <div className="relative container mx-auto px-4 py-24">
+        <h2 className="text-4xl md:text-5xl font-serif mb-16 text-light text-center">
           Menuiserie d'Art & Bois Décoratif
         </h2>
         
-        <Carousel className="w-full max-w-5xl mx-auto">
-          <CarouselContent>
-            {woodworkServices.map((service, index) => (
-              <CarouselItem key={index}>
-                <div className="p-1">
-                  <div className="relative group overflow-hidden">
-                    <div className="aspect-[16/9] overflow-hidden">
-                      <img
-                        src={service.image}
-                        alt={service.title}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent" />
-                    </div>
-                    
-                    <div className="absolute bottom-0 left-0 right-0 p-8 text-light">
-                      <h3 className="text-3xl font-serif mb-4 text-gold">{service.title}</h3>
-                      <p className="text-xl mb-6 text-light/90">{service.description}</p>
-                      <ul className="grid grid-cols-2 gap-4">
-                        {service.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-center space-x-2">
-                            <Check className="w-5 h-5 text-gold" />
-                            <span className="text-light/90">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="text-gold border-gold hover:bg-gold hover:text-dark -left-12 md:-left-16" />
-          <CarouselNext className="text-gold border-gold hover:bg-gold hover:text-dark -right-12 md:-right-16" />
-        </Carousel>
+        <div className="grid md:grid-cols-3 gap-8">
+          {woodworkServices.map((service, index) => (
+            <div 
+              key={index} 
+              className="bg-dark/40 backdrop-blur-sm border border-gold p-8 hover:bg-dark/60 transition-all duration-500"
+            >
+              <h3 className="text-2xl font-serif mb-6 text-gold">{service.title}</h3>
+              <p className="text-lg mb-8 text-light/90">{service.description}</p>
+              <ul className="space-y-4">
+                {service.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-gold flex-shrink-0" />
+                    <span className="text-light/90">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
