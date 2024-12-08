@@ -7,67 +7,89 @@ const chairs = [
     name: "Fauteuil Élégance",
     price: "1,290€",
     description: "Fauteuil contemporain en velours, structure en bois massif",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
+    color: "Bleu nuit"
   },
   {
     id: 2,
     name: "Chaise Royale",
     price: "890€",
     description: "Chaise design en cuir véritable avec finitions dorées",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
+    color: "Cognac"
   },
   {
     id: 3,
     name: "Bergère Louis XV",
     price: "2,490€",
     description: "Bergère style Louis XV, tapisserie fait main",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
+    color: "Bordeaux"
   },
   {
     id: 4,
     name: "Fauteuil Modern Art",
     price: "1,790€",
     description: "Fauteuil design contemporain, tissu premium",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
+    color: "Gris perle"
   }
 ];
 
 const Chairs = () => {
   return (
-    <section id="chairs" className="py-20 bg-light">
+    <section id="chairs" className="py-20 bg-gradient-to-b from-light to-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-serif mb-4 text-dark text-center">
-          Collection de Chaises
-        </h2>
-        <p className="text-gray text-center mb-12 max-w-2xl mx-auto">
-          Découvrez notre collection exclusive de chaises et fauteuils de luxe, alliant confort exceptionnel et design raffiné.
-        </p>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-serif mb-4 text-dark">
+            Collection de Chaises
+          </h2>
+          <div className="w-24 h-1 bg-gold mx-auto mb-6"></div>
+          <p className="text-gray text-lg max-w-2xl mx-auto">
+            Découvrez notre collection exclusive de chaises et fauteuils de luxe, alliant confort exceptionnel et design raffiné.
+          </p>
+        </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {chairs.map((chair) => (
             <Card 
               key={chair.id} 
-              className="hover:shadow-lg transition-all duration-500"
+              className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
             >
-              <CardHeader>
+              <CardHeader className="relative h-80 overflow-hidden">
                 <img
                   src={chair.image}
                   alt={chair.name}
-                  className="w-full h-64 object-cover rounded-t-lg"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
+                <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </CardHeader>
-              <CardContent>
-                <CardTitle className="text-xl mb-2">{chair.name}</CardTitle>
-                <CardDescription>{chair.description}</CardDescription>
-                <p className="text-gold font-semibold mt-4">{chair.price}</p>
+              <CardContent className="relative z-10 bg-white p-6">
+                <CardTitle className="text-2xl mb-2 font-serif">{chair.name}</CardTitle>
+                <CardDescription className="text-gray-600 mb-4">{chair.description}</CardDescription>
+                <div className="flex justify-between items-center mb-4">
+                  <span className="text-gold font-semibold text-xl">{chair.price}</span>
+                  <span className="text-sm text-gray-500">Coloris: {chair.color}</span>
+                </div>
               </CardContent>
-              <CardFooter>
-                <Button className="w-full bg-gold hover:bg-gold/90 text-white">
+              <CardFooter className="bg-white border-t border-gray-100">
+                <Button className="w-full bg-gold hover:bg-gold/90 text-white font-medium py-3 transition-colors duration-300">
                   Commander
                 </Button>
               </CardFooter>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-16 text-center">
+          <p className="text-gray-600 italic mb-8">
+            Chaque pièce est méticuleusement créée pour sublimer votre intérieur
+          </p>
+          <div className="flex justify-center space-x-4">
+            <div className="w-3 h-3 rounded-full bg-gold"></div>
+            <div className="w-3 h-3 rounded-full bg-gray-300"></div>
+            <div className="w-3 h-3 rounded-full bg-gray-300"></div>
+          </div>
         </div>
       </div>
     </section>
