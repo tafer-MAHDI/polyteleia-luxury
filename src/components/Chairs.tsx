@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from 'react-router-dom';
 
 const chairs = [
   {
@@ -37,6 +38,8 @@ const chairs = [
 ];
 
 const Chairs = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="chairs" className="py-20 bg-gradient-to-b from-light to-gray-50">
       <div className="container mx-auto px-4">
@@ -73,7 +76,10 @@ const Chairs = () => {
                 </div>
               </CardContent>
               <CardFooter className="bg-white border-t border-gray-100">
-                <Button className="w-full bg-gold hover:bg-gold/90 text-white font-medium py-3 transition-colors duration-300">
+                <Button 
+                  className="w-full bg-gold hover:bg-gold/90 text-white font-medium py-3 transition-colors duration-300"
+                  onClick={() => navigate(`/product/${chair.id}`)}
+                >
                   Commander
                 </Button>
               </CardFooter>
