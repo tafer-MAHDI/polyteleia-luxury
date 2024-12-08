@@ -37,7 +37,7 @@ const Services = () => {
   return (
     <section id="services" className="py-20 bg-light">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-serif mb-12 text-dark text-center animate-[fade-in_1s_ease-out]">
+        <h2 className="text-3xl md:text-4xl font-serif mb-12 text-dark text-center">
           Nos Services
         </h2>
         
@@ -45,8 +45,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="p-8 border border-gold hover:bg-gold hover:text-light transition-all duration-500 group hover:-translate-y-2"
-              style={{ animationDelay: `${index * 0.2}s` }}
+              className="p-8 border border-gold hover:bg-gold hover:text-light transition-all duration-500 group"
             >
               <h3 className="text-2xl font-serif mb-4">{service.title}</h3>
               <p className="mb-6 text-gray group-hover:text-light/90 transition-colors duration-500">{service.description}</p>
@@ -54,7 +53,7 @@ const Services = () => {
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center space-x-2">
                     <Check className="w-5 h-5 text-gold group-hover:text-light transition-colors duration-500" />
-                    <span className="transition-transform duration-300 group-hover:translate-x-1">{feature}</span>
+                    <span>{feature}</span>
                   </li>
                 ))}
               </ul>

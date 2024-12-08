@@ -3,7 +3,7 @@ const About = () => {
     <section id="about" className="py-20 bg-light">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="animate-[slide-in-right_1s_ease-out] opacity-0 [animation-fill-mode:forwards]">
+          <div>
             <h2 className="text-3xl md:text-4xl font-serif mb-6 text-dark">
               L'excellence dans chaque détail
             </h2>
@@ -18,7 +18,7 @@ const About = () => {
             <img
               src="/placeholder.svg"
               alt="Interior Design Expertise"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
