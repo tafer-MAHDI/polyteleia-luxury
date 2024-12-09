@@ -4,40 +4,40 @@ import { ArrowLeft } from 'lucide-react';
 
 const categories = {
   bureaux: [
-    { id: 1, name: "Bureau Présidentiel Excellence", price: "4,990€", image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952", description: "Bureau présidentiel en bois massif" },
-    { id: 2, name: "Bureau Direction Moderne", price: "3,790€", image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e", description: "Bureau de direction contemporain" },
-    { id: 3, name: "Bureau Executive Plus", price: "4,290€", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158", description: "Bureau executive avec extensions" },
-    { id: 4, name: "Bureau Luxe Premium", price: "5,990€", image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742", description: "Bureau premium tout équipé" },
-    { id: 5, name: "Bureau Classic Elite", price: "3,990€", image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625", description: "Bureau classique raffiné" },
-    { id: 6, name: "Bureau Modern Tech", price: "4,490€", image: "https://images.unsplash.com/photo-1524230572899-a752b3835840", description: "Bureau high-tech connecté" },
-    { id: 7, name: "Bureau Signature", price: "6,990€", image: "https://images.unsplash.com/photo-1433832597046-4f10e10ac764", description: "Bureau signature exclusif" },
-    { id: 8, name: "Bureau Élégance", price: "4,790€", image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833", description: "Bureau élégant et fonctionnel" },
-    { id: 9, name: "Bureau Prestige", price: "5,490€", image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952", description: "Bureau prestige haut de gamme" },
-    { id: 10, name: "Bureau Executive Supreme", price: "7,990€", image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e", description: "Bureau supreme luxe" }
+    { id: 1, name: "Bureau Présidentiel Excellence", price: "4,990€", image: "/placeholder.svg", description: "Bureau présidentiel en bois massif" },
+    { id: 2, name: "Bureau Direction Moderne", price: "3,790€", image: "/placeholder.svg", description: "Bureau de direction contemporain" },
+    { id: 3, name: "Bureau Executive Plus", price: "4,290€", image: "/placeholder.svg", description: "Bureau executive avec extensions" },
+    { id: 4, name: "Bureau Luxe Premium", price: "5,990€", image: "/placeholder.svg", description: "Bureau premium tout équipé" },
+    { id: 5, name: "Bureau Classic Elite", price: "3,990€", image: "/placeholder.svg", description: "Bureau classique raffiné" },
+    { id: 6, name: "Bureau Modern Tech", price: "4,490€", image: "/placeholder.svg", description: "Bureau high-tech connecté" },
+    { id: 7, name: "Bureau Signature", price: "6,990€", image: "/placeholder.svg", description: "Bureau signature exclusif" },
+    { id: 8, name: "Bureau Élégance", price: "4,790€", image: "/placeholder.svg", description: "Bureau élégant et fonctionnel" },
+    { id: 9, name: "Bureau Prestige", price: "5,490€", image: "/placeholder.svg", description: "Bureau prestige haut de gamme" },
+    { id: 10, name: "Bureau Executive Supreme", price: "7,990€", image: "/placeholder.svg", description: "Bureau supreme luxe" }
   ],
   tablesReunion: [
-    { id: 11, name: "Table Réunion Executive", price: "3,890€", image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334", description: "Table de réunion professionnelle" },
-    { id: 12, name: "Table Conférence Plus", price: "4,990€", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158", description: "Table de conférence modulable" },
-    { id: 13, name: "Table Meeting Pro", price: "3,490€", image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742", description: "Table de réunion moderne" },
-    { id: 14, name: "Table Conseil Elite", price: "5,990€", image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625", description: "Table de conseil premium" },
-    { id: 15, name: "Table Réunion Tech", price: "4,290€", image: "https://images.unsplash.com/photo-1524230572899-a752b3835840", description: "Table connectée" },
-    { id: 16, name: "Table Conférence Luxe", price: "6,990€", image: "https://images.unsplash.com/photo-1433832597046-4f10e10ac764", description: "Table de conférence luxueuse" },
-    { id: 17, name: "Table Meeting Classic", price: "3,990€", image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833", description: "Table classique élégante" },
-    { id: 18, name: "Table Conseil Modern", price: "4,790€", image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334", description: "Table moderne design" },
-    { id: 19, name: "Table Réunion Premium", price: "5,490€", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158", description: "Table premium exclusive" },
-    { id: 20, name: "Table Conférence Supreme", price: "7,990€", image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742", description: "Table supreme haut de gamme" }
+    { id: 11, name: "Table Réunion Executive", price: "3,890€", image: "/placeholder.svg", description: "Table de réunion professionnelle" },
+    { id: 12, name: "Table Conférence Plus", price: "4,990€", image: "/placeholder.svg", description: "Table de conférence modulable" },
+    { id: 13, name: "Table Meeting Pro", price: "3,490€", image: "/placeholder.svg", description: "Table de réunion moderne" },
+    { id: 14, name: "Table Conseil Elite", price: "5,990€", image: "/placeholder.svg", description: "Table de conseil premium" },
+    { id: 15, name: "Table Réunion Tech", price: "4,290€", image: "/placeholder.svg", description: "Table connectée" },
+    { id: 16, name: "Table Conférence Luxe", price: "6,990€", image: "/placeholder.svg", description: "Table de conférence luxueuse" },
+    { id: 17, name: "Table Meeting Classic", price: "3,990€", image: "/placeholder.svg", description: "Table classique élégante" },
+    { id: 18, name: "Table Conseil Modern", price: "4,790€", image: "/placeholder.svg", description: "Table moderne design" },
+    { id: 19, name: "Table Réunion Premium", price: "5,490€", image: "/placeholder.svg", description: "Table premium exclusive" },
+    { id: 20, name: "Table Conférence Supreme", price: "7,990€", image: "/placeholder.svg", description: "Table supreme haut de gamme" }
   ],
   bibliotheques: [
-    { id: 21, name: "Bibliothèque Corporate", price: "2,990€", image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b", description: "Bibliothèque professionnelle" },
-    { id: 22, name: "Bibliothèque Executive", price: "3,990€", image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952", description: "Bibliothèque executive" },
-    { id: 23, name: "Bibliothèque Modern", price: "2,790€", image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e", description: "Bibliothèque moderne" },
-    { id: 24, name: "Bibliothèque Classic", price: "3,490€", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158", description: "Bibliothèque classique" },
-    { id: 25, name: "Bibliothèque Premium", price: "4,990€", image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742", description: "Bibliothèque premium" },
-    { id: 26, name: "Bibliothèque Luxe", price: "5,990€", image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625", description: "Bibliothèque luxe" },
-    { id: 27, name: "Bibliothèque Elite", price: "4,490€", image: "https://images.unsplash.com/photo-1524230572899-a752b3835840", description: "Bibliothèque elite" },
-    { id: 28, name: "Bibliothèque Pro", price: "3,790€", image: "https://images.unsplash.com/photo-1433832597046-4f10e10ac764", description: "Bibliothèque professionnelle" },
-    { id: 29, name: "Bibliothèque Supreme", price: "6,990€", image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833", description: "Bibliothèque supreme" },
-    { id: 30, name: "Bibliothèque Signature", price: "7,990€", image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b", description: "Bibliothèque signature" }
+    { id: 21, name: "Bibliothèque Corporate", price: "2,990€", image: "/placeholder.svg", description: "Bibliothèque professionnelle" },
+    { id: 22, name: "Bibliothèque Executive", price: "3,990€", image: "/placeholder.svg", description: "Bibliothèque executive" },
+    { id: 23, name: "Bibliothèque Modern", price: "2,790€", image: "/placeholder.svg", description: "Bibliothèque moderne" },
+    { id: 24, name: "Bibliothèque Classic", price: "3,490€", image: "/placeholder.svg", description: "Bibliothèque classique" },
+    { id: 25, name: "Bibliothèque Premium", price: "4,990€", image: "/placeholder.svg", description: "Bibliothèque premium" },
+    { id: 26, name: "Bibliothèque Luxe", price: "5,990€", image: "/placeholder.svg", description: "Bibliothèque luxe" },
+    { id: 27, name: "Bibliothèque Elite", price: "4,490€", image: "/placeholder.svg", description: "Bibliothèque elite" },
+    { id: 28, name: "Bibliothèque Pro", price: "3,790€", image: "/placeholder.svg", description: "Bibliothèque professionnelle" },
+    { id: 29, name: "Bibliothèque Supreme", price: "6,990€", image: "/placeholder.svg", description: "Bibliothèque supreme" },
+    { id: 30, name: "Bibliothèque Signature", price: "7,990€", image: "/placeholder.svg", description: "Bibliothèque signature" }
   ]
 };
 
