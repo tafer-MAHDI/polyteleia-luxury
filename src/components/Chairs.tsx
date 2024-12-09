@@ -88,7 +88,14 @@ const Chairs = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-gray-600 italic mb-8">
+          <Button 
+            variant="outline" 
+            className="border-gold text-gold hover:bg-gold hover:text-white transition-colors duration-300"
+            onClick={() => navigate('/categories')}
+          >
+            Découvrir plus de modèles
+          </Button>
+          <p className="text-gray-600 italic mt-8 mb-8">
             Chaque pièce est méticuleusement créée pour sublimer votre intérieur
           </p>
           <div className="flex justify-center space-x-4">
