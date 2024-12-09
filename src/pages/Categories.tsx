@@ -57,58 +57,60 @@ const Categories = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="container mx-auto px-4 py-20">
-      <Button 
-        variant="ghost" 
-        className="mb-8 hover:bg-gray-100"
-        onClick={() => navigate(-1)}
-      >
-        <ArrowLeft className="mr-2" />
-        Retour
-      </Button>
+    <div className="geometric-background min-h-screen">
+      <div className="container mx-auto px-4 py-20">
+        <Button 
+          variant="ghost" 
+          className="mb-8 hover:bg-gray-100"
+          onClick={() => navigate(-1)}
+        >
+          <ArrowLeft className="mr-2" />
+          Retour
+        </Button>
 
-      {Object.entries(categories).map(([category, products]) => (
-        <div key={category} className="mb-20">
-          <h2 className="text-4xl font-serif mb-8 text-center">
-            {category === 'chairs' && 'Chaises'}
-            {category === 'diningTables' && 'Tables à manger'}
-            {category === 'armchairs' && 'Fauteuils'}
-            {category === 'sofas' && 'Canapés'}
-          </h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-            {products.map((product) => (
-              <div 
-                key={product.id}
-                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                <div className="relative h-64">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                
-                <div className="p-4 bg-white">
-                  <h3 className="text-lg font-serif mb-2">{product.name}</h3>
-                  <p className="text-sm text-gray-600 mb-2">{product.description}</p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gold font-semibold">{product.price}</span>
-                    <Button 
-                      className="bg-gold hover:bg-gold/90 text-white"
-                      onClick={() => navigate(`/product/${product.id}`)}
-                    >
-                      Voir détails
-                    </Button>
+        {Object.entries(categories).map(([category, products]) => (
+          <div key={category} className="mb-20">
+            <h2 className="text-4xl font-serif mb-8 text-center">
+              {category === 'chairs' && 'Chaises'}
+              {category === 'diningTables' && 'Tables à manger'}
+              {category === 'armchairs' && 'Fauteuils'}
+              {category === 'sofas' && 'Canapés'}
+            </h2>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+              {products.map((product) => (
+                <div 
+                  key={product.id}
+                  className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <div className="relative h-64">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                  
+                  <div className="p-4 bg-white">
+                    <h3 className="text-lg font-serif mb-2">{product.name}</h3>
+                    <p className="text-sm text-gray-600 mb-2">{product.description}</p>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gold font-semibold">{product.price}</span>
+                      <Button 
+                        className="bg-gold hover:bg-gold/90 text-white"
+                        onClick={() => navigate(`/product/${product.id}`)}
+                      >
+                        Voir détails
+                      </Button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
