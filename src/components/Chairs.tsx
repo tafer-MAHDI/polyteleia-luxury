@@ -78,7 +78,7 @@ const Chairs = () => {
               <CardFooter className="bg-white border-t border-gray-100">
                 <Button 
                   className="w-full bg-gold hover:bg-gold/90 text-white font-medium py-3 transition-colors duration-300"
-                  onClick={() => navigate(`/product/${chair.id}`)}
+                  onClick={() => navigate('/categories')}
                 >
                   En savoir plus
                 </Button>
