@@ -8,7 +8,7 @@ const professionalFurniture = [
     name: "Bureau Présidentiel Excellence",
     price: "4,990€",
     description: "Bureau présidentiel en bois massif avec finitions luxueuses",
-    image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952",
+    image: "/placeholder.svg",
     category: "bureau"
   },
   {
@@ -16,7 +16,7 @@ const professionalFurniture = [
     name: "Table de Réunion Executive",
     price: "3,890€",
     description: "Table de réunion professionnelle, finition acajou",
-    image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334",
+    image: "/placeholder.svg",
     category: "reunion"
   },
   {
@@ -24,7 +24,7 @@ const professionalFurniture = [
     name: "Bibliothèque Corporate",
     price: "2,990€",
     description: "Bibliothèque professionnelle modulable en bois noble",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    image: "/placeholder.svg",
     category: "bibliotheque"
   },
   {
@@ -32,7 +32,7 @@ const professionalFurniture = [
     name: "Bureau Direction Moderne",
     price: "3,790€",
     description: "Bureau de direction contemporain avec rangements intégrés",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
+    image: "/placeholder.svg",
     category: "bureau"
   }
 ];
@@ -41,7 +41,7 @@ const ProfessionalFurniture = () => {
   const navigate = useNavigate();
 
   return (
-    <section id="professional" className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section id="professional" className="py-20 geometric-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif mb-4 text-dark">
@@ -79,7 +79,7 @@ const ProfessionalFurniture = () => {
                   className="w-full bg-gold hover:bg-gold/90 text-white font-medium py-3 transition-colors duration-300"
                   onClick={() => navigate(`/product/${item.id}`)}
                 >
-                  Commander
+                  En savoir plus
                 </Button>
               </CardFooter>
             </Card>
