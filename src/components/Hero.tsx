@@ -1,4 +1,4 @@
-import { WhatsApp } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 
 const Hero = () => {
   const handleWhatsAppClick = () => {
@@ -36,7 +36,7 @@ const Hero = () => {
             onClick={handleWhatsAppClick}
             className="inline-flex items-center gap-2 px-8 py-3 bg-[#25D366] hover:bg-[#128C7E] text-white transition-all duration-500 rounded-md"
           >
-            <WhatsApp className="w-5 h-5" />
+            <MessageCircle className="w-5 h-5" />
             Nous contacter
           </button>
         </div>

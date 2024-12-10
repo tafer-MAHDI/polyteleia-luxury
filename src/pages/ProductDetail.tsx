@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, WhatsApp } from 'lucide-react';
+import { ArrowLeft, MessageCircle } from 'lucide-react';
 import { useToast } from "@/components/ui/use-toast";
 
 const ProductDetail = () => {
@@ -123,7 +123,7 @@ const ProductDetail = () => {
               className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white py-6 text-lg flex items-center justify-center gap-2"
               onClick={handleWhatsAppClick}
             >
-              <WhatsApp className="w-6 h-6" />
+              <MessageCircle className="w-6 h-6" />
               Contacter sur WhatsApp
             </Button>
           </div>
