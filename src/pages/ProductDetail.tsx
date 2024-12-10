@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, WhatsApp } from 'lucide-react';
 import { useToast } from "@/components/ui/use-toast";
 
 const ProductDetail = () => {
@@ -32,11 +32,10 @@ const ProductDetail = () => {
     colors: ["Or", "Argent", "Bronze"]
   };
 
-  const handleOrder = () => {
-    toast({
-      title: "Demande envoyée",
-      description: "Nous vous contacterons prochainement pour finaliser votre commande.",
-    });
+  const handleWhatsAppClick = () => {
+    const message = `Bonjour, je suis intéressé(e) par le produit ${product.name} (Réf: ${product.id})`;
+    const whatsappUrl = `https://wa.me/+33000000000?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   return (
@@ -121,10 +120,11 @@ const ProductDetail = () => {
             </div>
 
             <Button 
-              className="w-full bg-gold hover:bg-gold/90 text-white py-6 text-lg"
-              onClick={handleOrder}
+              className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white py-6 text-lg flex items-center justify-center gap-2"
+              onClick={handleWhatsAppClick}
             >
-              Demander un devis
+              <WhatsApp className="w-6 h-6" />
+              Contacter sur WhatsApp
             </Button>
           </div>
         </div>
