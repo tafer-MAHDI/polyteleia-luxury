@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import Navigation from '../components/Navigation';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, MessageCircle } from 'lucide-react';
 
 const projectImages = [
   "/placeholder.svg",
@@ -14,6 +14,11 @@ const projectImages = [
 const WoodworkProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+
+  const handleWhatsAppContact = () => {
+    const message = `Bonjour, je suis intéressé(e) par votre projet de menuiserie. Pouvez-vous me donner plus d'informations ?`;
+    window.open(`https://wa.me/+33000000000?text=${encodeURIComponent(message)}`, '_blank');
+  };
 
   return (
     <div className="min-h-screen bg-light">
@@ -48,12 +53,12 @@ const WoodworkProjectDetail = () => {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-xl">
-              <h1 className="text-4xl font-serif text-dark mb-4">Habillage Mural Art Déco</h1>
-              <p className="text-gold text-lg mb-6">Boiseries</p>
+              <h1 className="text-4xl font-serif text-dark mb-4">Bibliothèque Sur Mesure</h1>
+              <p className="text-gold text-lg mb-6">Menuiserie d'Art</p>
               
               <div className="prose max-w-none">
                 <p className="text-gray-600 mb-6">
-                  Un habillage mural sur mesure en bois précieux, alliant élégance classique et motifs Art Déco. 
+                  Une bibliothèque sur mesure en chêne massif, alliant élégance classique et fonctionnalité moderne. 
                   Chaque détail a été minutieusement sculpté pour créer une pièce unique qui s'intègre parfaitement 
                   dans son environnement.
                 </p>
@@ -69,27 +74,22 @@ const WoodworkProjectDetail = () => {
 
                 <h2 className="text-2xl font-serif text-dark mt-8 mb-4">Notre approche</h2>
                 <p className="text-gray-600 mb-6">
-                  Chaque élément de cet habillage mural a été pensé pour créer un équilibre parfait entre 
-                  esthétique et harmonie avec l'espace. Les sculptures ont été réalisées à la main par nos artisans, 
+                  Chaque élément de cette bibliothèque a été pensé pour créer un équilibre parfait entre 
+                  esthétique et praticité. Les sculptures ont été réalisées à la main par nos artisans, 
                   perpétuant ainsi les traditions de la menuiserie d'art française.
                 </p>
+
+                <button
+                  onClick={handleWhatsAppContact}
+                  className="w-full mt-8 py-4 bg-[#25D366] hover:bg-[#128C7E] text-white transition-colors duration-300 flex items-center justify-center gap-2 rounded-lg"
+                >
+                  <MessageCircle className="w-6 h-6" />
+                  Contacter sur WhatsApp pour plus d'informations
+                </button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Fond 2D */}
-      <div className="fixed inset-0 -z-10 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(109.6deg, rgba(223,234,247,1) 11.2%, rgba(244,248,252,1) 91.1%)`,
-          backgroundSize: '100% 100%',
-          opacity: 0.5
-        }}></div>
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 30% 50%, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%)`,
-          backgroundSize: '100% 100%'
-        }}></div>
       </div>
     </div>
   );
