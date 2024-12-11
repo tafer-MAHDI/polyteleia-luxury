@@ -10,6 +10,7 @@ import ProfessionalCategories from "./pages/ProfessionalCategories";
 import AllProjects from "./pages/AllProjects";
 import ProjectDetail from "./pages/ProjectDetail";
 import WoodworkProjects from "./pages/WoodworkProjects";
+import WoodworkProjectDetail from "./pages/WoodworkProjectDetail";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/all-projects" element={<AllProjects />} />
           <Route path="/project-detail/:id" element={<ProjectDetail />} />
           <Route path="/woodwork-projects" element={<WoodworkProjects />} />
+          <Route path="/woodwork-project/:id" element={<WoodworkProjectDetail />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

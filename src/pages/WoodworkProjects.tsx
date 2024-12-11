@@ -114,13 +114,21 @@ const WoodworkProjects = () => {
                 <h3 className="text-xl font-serif text-dark mb-2">{project.title}</h3>
                 <p className="text-gold mb-4">{project.category}</p>
                 <p className="text-gray-600 mb-6">{project.description}</p>
-                <button
-                  onClick={() => handleWhatsAppContact(project.title)}
-                  className="w-full py-3 bg-[#25D366] hover:bg-[#128C7E] text-white transition-colors duration-300 flex items-center justify-center gap-2"
-                >
-                  <MessageCircle className="w-5 h-5" />
-                  Demander plus d'informations
-                </button>
+                <div className="space-y-3">
+                  <button
+                    onClick={() => navigate(`/woodwork-project/${project.id}`)}
+                    className="w-full py-3 bg-dark text-light hover:bg-gold transition-colors duration-300"
+                  >
+                    En savoir plus
+                  </button>
+                  <button
+                    onClick={() => handleWhatsAppContact(project.title)}
+                    className="w-full py-3 bg-[#25D366] hover:bg-[#128C7E] text-white transition-colors duration-300 flex items-center justify-center gap-2"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    Contacter sur WhatsApp
+                  </button>
+                </div>
               </div>
             </div>
           ))}
