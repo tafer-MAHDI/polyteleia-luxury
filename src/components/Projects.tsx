@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 const projects = [
   {
     title: "Villa Méditerranéenne",
@@ -22,6 +24,8 @@ const projects = [
 ];
 
 const Projects = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="projects" className="py-20 bg-dark">
       <div className="container mx-auto px-4">
@@ -45,6 +49,15 @@ const Projects = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <button
+            onClick={() => navigate('/all-projects')}
+            className="inline-block px-8 py-3 border-2 border-gold text-gold hover:bg-gold hover:text-light transition-all duration-500"
+          >
+            Voir plus de projets
+          </button>
         </div>
       </div>
     </section>

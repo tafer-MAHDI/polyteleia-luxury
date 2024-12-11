@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import ProductDetail from "./pages/ProductDetail";
 import Categories from "./pages/Categories";
 import ProfessionalCategories from "./pages/ProfessionalCategories";
+import AllProjects from "./pages/AllProjects";
+import ProjectDetail from "./pages/ProjectDetail";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +23,8 @@ const App = () => (
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/professional-categories" element={<ProfessionalCategories />} />
+          <Route path="/all-projects" element={<AllProjects />} />
+          <Route path="/project-detail/:id" element={<ProjectDetail />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
