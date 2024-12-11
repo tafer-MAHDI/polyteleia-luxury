@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const woodworkServices = [
   {
@@ -34,6 +35,8 @@ const woodworkServices = [
 ];
 
 const WoodworkSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="woodwork" className="relative min-h-screen">
       {/* Video Background */}
@@ -75,6 +78,15 @@ const WoodworkSection = () => {
               </ul>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <button
+            onClick={() => navigate('/woodwork-projects')}
+            className="inline-block px-8 py-3 border-2 border-gold text-gold hover:bg-gold hover:text-light transition-all duration-500"
+          >
+            Voir plus de réalisations
+          </button>
         </div>
       </div>
     </section>
