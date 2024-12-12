@@ -14,11 +14,11 @@ const About = () => {
               Chaque projet est une œuvre d'art unique, façonnée selon vos désirs et notre expertise. Nous transformons vos espaces en lieux de vie exceptionnels, où le luxe rencontre la fonctionnalité.
             </p>
           </div>
-          <div className="relative h-[500px] group">
+          <div className="relative h-[500px] overflow-hidden rounded-lg shadow-xl">
             <img
-              src="/placeholder.svg"
-              alt="Interior Design Expertise"
-              className="w-full h-full object-cover"
+              src="/lovable-uploads/c044dc43-6f58-452c-855e-e2529b46c7ce.png"
+              alt="Notre atelier de boiserie"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
           </div>
         </div>
