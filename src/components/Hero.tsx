@@ -1,20 +1,17 @@
-import { MessageCircle } from 'lucide-react';
-
 const Hero = () => {
-  const handleWhatsAppClick = () => {
-    const message = "Bonjour, je souhaite plus d'informations sur vos services.";
-    const whatsappUrl = `https://wa.me/+33000000000?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-  };
-
   return (
     <div className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <img
-          src="/placeholder.svg"
-          alt="Interior Design"
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-cover"
-        />
+        >
+          <source src="https://player.vimeo.com/external/459389137.sd.mp4?s=956afd13a312f3a523c58f3f7128b3f94576da80&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
         <div className="absolute inset-0 bg-dark bg-opacity-40"></div>
       </div>
       
@@ -32,13 +29,6 @@ const Hero = () => {
           >
             Découvrir nos projets
           </a>
-          <button
-            onClick={handleWhatsAppClick}
-            className="inline-flex items-center gap-2 px-8 py-3 bg-[#25D366] hover:bg-[#128C7E] text-white transition-all duration-500 rounded-md"
-          >
-            <MessageCircle className="w-5 h-5" />
-            Nous contacter
-          </button>
         </div>
       </div>
     </div>
