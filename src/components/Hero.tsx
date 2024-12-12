@@ -2,16 +2,11 @@ const Hero = () => {
   return (
     <div className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
+        <img
+          src="/lovable-uploads/c044dc43-6f58-452c-855e-e2529b46c7ce.png"
+          alt="Luxury Interior Design"
           className="w-full h-full object-cover"
-        >
-          <source src="https://player.vimeo.com/external/459389137.sd.mp4?s=956afd13a312f3a523c58f3f7128b3f94576da80&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
-          Votre navigateur ne supporte pas la lecture de vidéos.
-        </video>
+        />
         <div className="absolute inset-0 bg-dark bg-opacity-40"></div>
       </div>
       
