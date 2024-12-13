@@ -24,7 +24,7 @@ const About = () => {
             <img
               src="/lovable-uploads/54eeddaa-c942-41fc-b80c-6b670c49965d.png"
               alt="Mr TAFER ELMAHDI - CEO"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
             />
           </div>
         </div>
