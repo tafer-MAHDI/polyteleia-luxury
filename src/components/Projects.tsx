@@ -22,8 +22,8 @@ const projects = [
   {
     title: "Suite Royale",
     category: "Résidentiel",
-    image: "/lovable-uploads/61f6d704-2690-4e57-a658-286f71b7bc5f.png",
-    description: "Chambre de luxe avec finitions artisanales"
+    image: "/lovable-uploads/2151b781-b997-4f47-b23e-637e9c9d3c4c.png",
+    description: "Salon luxueux avec finitions artisanales"
   }
 ];
 
