@@ -15,7 +15,7 @@ const Hero = () => {
           POLYTELEIA LUXURY
         </h1>
         <p className="text-xl md:text-2xl font-light mb-8">
-          Créateur d'espaces d'exception
+          Architecture d'intérieur & Créateur d'espaces d'exception
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a

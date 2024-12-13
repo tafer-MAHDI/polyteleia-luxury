@@ -8,7 +8,7 @@ const About = () => {
               L'excellence dans chaque détail
             </h2>
             <p className="text-gray mb-6 leading-relaxed">
-              POLYTELEIA LUXURY incarne l'excellence dans l'architecture d'intérieur. Notre approche unique combine créativité, innovation et savoir-faire artisanal pour créer des espaces qui transcendent l'ordinaire.
+              POLYTELEIA LUXURY incarne l'excellence dans l'architecture d'intérieur haut de gamme. Notre approche unique d'architecture d'intérieur combine créativité, innovation et savoir-faire artisanal pour créer des espaces qui transcendent l'ordinaire. En tant que cabinet d'architecture d'intérieur de luxe, nous concevons chaque projet comme une œuvre unique.
             </p>
             <div className="mt-8">
               <p className="text-gray leading-relaxed italic mb-4">

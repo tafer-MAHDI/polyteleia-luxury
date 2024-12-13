@@ -13,7 +13,7 @@ const services = [
   },
   {
     title: "Architecture d'intérieur",
-    description: "Transformation complète de vos espaces",
+    description: "Transformation complète de vos espaces par notre cabinet d'architecture d'intérieur",
     features: [
       "Rénovation",
       "Optimisation d'espace",

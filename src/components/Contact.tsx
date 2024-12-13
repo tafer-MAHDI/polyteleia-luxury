@@ -7,7 +7,7 @@ const Contact = () => {
             Concrétisons vos projets
           </h2>
           <p className="text-light/80 mb-12">
-            Contactez-nous pour donner vie à vos rêves d'intérieur
+            Contactez notre cabinet d'architecture d'intérieur pour donner vie à vos rêves d'aménagement et de décoration
           </p>
           
           <div className="grid md:grid-cols-2 gap-8">
