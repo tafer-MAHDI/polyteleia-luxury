@@ -10,14 +10,20 @@ const About = () => {
             <p className="text-gray mb-6 leading-relaxed">
               POLYTELEIA LUXURY incarne l'excellence dans l'architecture d'intérieur. Notre approche unique combine créativité, innovation et savoir-faire artisanal pour créer des espaces qui transcendent l'ordinaire.
             </p>
-            <p className="text-gray leading-relaxed">
-              Chaque projet est une œuvre d'art unique, façonnée selon vos désirs et notre expertise. Nous transformons vos espaces en lieux de vie exceptionnels, où le luxe rencontre la fonctionnalité.
-            </p>
+            <div className="mt-8">
+              <p className="text-gray leading-relaxed italic mb-4">
+                "Notre mission est de transformer vos rêves en réalité tangible. Chaque projet que nous entreprenons est une opportunité de créer quelque chose d'extraordinaire, où l'artisanat traditionnel rencontre l'innovation moderne."
+              </p>
+              <div className="flex items-center">
+                <h3 className="text-xl font-serif text-dark">Mr TAFER ELMAHDI</h3>
+                <span className="ml-2 text-gold">CEO & Fondateur</span>
+              </div>
+            </div>
           </div>
-          <div className="relative h-[500px] overflow-hidden rounded-lg shadow-xl">
+          <div className="relative h-[500px] overflow-hidden rounded-lg shadow-xl bg-dark">
             <img
-              src="/lovable-uploads/c044dc43-6f58-452c-855e-e2529b46c7ce.png"
-              alt="Notre atelier de boiserie"
+              src="/lovable-uploads/54eeddaa-c942-41fc-b80c-6b670c49965d.png"
+              alt="Mr TAFER ELMAHDI - CEO"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
           </div>
