@@ -39,18 +39,13 @@ const WoodworkSection = () => {
 
   return (
     <section id="woodwork" className="relative min-h-screen">
-      {/* Video Background */}
+      {/* Background Image */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute w-full h-full object-cover"
-        >
-          <source src="https://player.vimeo.com/external/459389137.sd.mp4?s=956afd13a312f3a523c58f3f7128b3f94576da80&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
-          Votre navigateur ne supporte pas la lecture de vidéos.
-        </video>
+        <img
+          src="/lovable-uploads/b9259abb-08b5-41bd-921a-80c548d09a13.png"
+          alt="Atelier de menuiserie"
+          className="absolute w-full h-full object-cover grayscale"
+        />
         <div className="absolute inset-0 bg-dark/80" />
       </div>
 
