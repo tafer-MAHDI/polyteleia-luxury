@@ -19,6 +19,7 @@ export default {
     },
     extend: {
       colors: {
+        beige: "#F5F5DC",
         gold: "#C6A87D",
         dark: "#1A1A1A",
         light: "#F5F5F5",
