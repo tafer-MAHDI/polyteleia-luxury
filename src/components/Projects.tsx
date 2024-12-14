@@ -8,10 +8,10 @@ const projects = [
     description: "Design contemporain avec cheminée intégrée"
   },
   {
-    title: "Suite Orientale",
+    title: "Salon Oriental Luxueux",
     category: "Résidentiel",
-    image: "/lovable-uploads/360692b4-51bd-4f62-9749-0d0b007e2f97.png",
-    description: "Chambre luxueuse aux influences orientales"
+    image: "/lovable-uploads/8a047a60-bbee-4c91-a77a-9b57b7009657.png",
+    description: "Salon luxueux avec finitions dorées et luminaires d'exception"
   },
   {
     title: "Espace Piscine",
@@ -20,10 +20,10 @@ const projects = [
     description: "Aménagement extérieur avec piscine"
   },
   {
-    title: "Suite Royale",
+    title: "Salon Contemporain",
     category: "Résidentiel",
     image: "/lovable-uploads/2151b781-b997-4f47-b23e-637e9c9d3c4c.png",
-    description: "Salon luxueux avec finitions artisanales"
+    description: "Design moderne avec éléments décoratifs raffinés"
   }
 ];
 
