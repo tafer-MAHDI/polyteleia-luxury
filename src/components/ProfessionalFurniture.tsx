@@ -7,32 +7,32 @@ const professionalFurniture = [
     id: 1,
     name: "Bureau Présidentiel Excellence",
     price: "4,990€",
-    description: "Bureau présidentiel en bois massif avec finitions luxueuses",
-    image: "/placeholder.svg",
+    description: "Bureau présidentiel en noyer avec finitions luxueuses et rangements intégrés",
+    image: "/lovable-uploads/e44881bf-744a-4cb3-bfbb-0c52958647ac.png",
     category: "bureau"
   },
   {
     id: 2,
     name: "Table de Réunion Executive",
     price: "3,890€",
-    description: "Table de réunion professionnelle, finition acajou",
-    image: "/placeholder.svg",
+    description: "Table de réunion ovale professionnelle avec connectique intégrée",
+    image: "/lovable-uploads/5410ec4f-f7cf-4666-bc5c-13e1caa8b46c.png",
     category: "reunion"
   },
   {
     id: 3,
-    name: "Bibliothèque Corporate",
-    price: "2,990€",
-    description: "Bibliothèque professionnelle modulable en bois noble",
-    image: "/placeholder.svg",
-    category: "bibliotheque"
+    name: "Bureau Direction Design",
+    price: "3,990€",
+    description: "Bureau de direction moderne avec rangement bibliothèque",
+    image: "/lovable-uploads/a3606b6f-e2a4-4b90-adad-b9c60e50b3d4.png",
+    category: "bureau"
   },
   {
     id: 4,
-    name: "Bureau Direction Moderne",
-    price: "3,790€",
-    description: "Bureau de direction contemporain avec rangements intégrés",
-    image: "/placeholder.svg",
+    name: "Espace de Travail Collaboratif",
+    price: "5,790€",
+    description: "Configuration modulaire pour espace de travail partagé",
+    image: "/lovable-uploads/d72e5e61-5995-474f-85ac-6863559688bc.png",
     category: "bureau"
   }
 ];
