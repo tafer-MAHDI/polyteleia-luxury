@@ -1,12 +1,13 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from 'react-router-dom';
+import { useLanguage } from "../contexts/LanguageContext";
 
 const furniture = [
   {
     id: 1,
     name: "Fauteuil Hilsen",
-    price: "2,490€",
+    price: "24,900 DH",
     description: "Fauteuil contemporain en tissu bouclette, base dorée rotative",
     image: "/lovable-uploads/91a72674-b727-49fb-b0e6-91d7485a3c03.png",
     color: "Crème"
@@ -14,7 +15,7 @@ const furniture = [
   {
     id: 2,
     name: "Canapé Cloud",
-    price: "4,990€",
+    price: "49,900 DH",
     description: "Canapé moderne en tissu bouclette avec base dorée",
     image: "/lovable-uploads/072cd52d-9dd1-4f7c-8739-c9da05f72ae4.png",
     color: "Blanc cassé"
@@ -22,7 +23,7 @@ const furniture = [
   {
     id: 3,
     name: "Table Milano",
-    price: "3,990€",
+    price: "39,900 DH",
     description: "Table en bois massif hêtre plaquage noyer naturel",
     image: "/lovable-uploads/43978cc1-d560-4536-b09f-c3d8b05d158f.png",
     color: "Noyer naturel"
@@ -30,7 +31,7 @@ const furniture = [
   {
     id: 4,
     name: "Chaises Vitalia",
-    price: "1,980 DH HT",
+    price: "19,800 DH",
     description: "Chaise bois hêtre massif Similicuir de votre choix",
     image: "/lovable-uploads/2627fbb2-97e6-4db9-86ac-3ee1817a5aff.png",
     color: "Taupe"
@@ -39,6 +40,7 @@ const furniture = [
 
 const Chairs = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   return (
     <section id="chairs" className="py-20 geometric-background">
@@ -80,7 +82,7 @@ const Chairs = () => {
                   className="w-full bg-gold hover:bg-gold/90 text-white font-medium py-3 transition-colors duration-300"
                   onClick={() => navigate('/categories')}
                 >
-                  En savoir plus
+                  {t('common.learnMore')}
                 </Button>
               </CardFooter>
             </Card>
@@ -93,7 +95,7 @@ const Chairs = () => {
             className="border-gold text-gold hover:bg-gold hover:text-white transition-colors duration-300"
             onClick={() => navigate('/categories')}
           >
-            Découvrir plus de modèles
+            {t('common.discoverMore')}
           </Button>
         </div>
       </div>
