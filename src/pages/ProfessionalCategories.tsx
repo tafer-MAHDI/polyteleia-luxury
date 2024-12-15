@@ -4,40 +4,40 @@ import { ArrowLeft } from 'lucide-react';
 
 const categories = {
   bureaux: [
-    { id: 1, name: "Bureau Présidentiel Excellence", price: "4,990€", image: "/placeholder.svg", description: "Bureau présidentiel en bois massif" },
-    { id: 2, name: "Bureau Direction Moderne", price: "3,790€", image: "/placeholder.svg", description: "Bureau de direction contemporain" },
-    { id: 3, name: "Bureau Executive Plus", price: "4,290€", image: "/placeholder.svg", description: "Bureau executive avec extensions" },
-    { id: 4, name: "Bureau Luxe Premium", price: "5,990€", image: "/placeholder.svg", description: "Bureau premium tout équipé" },
-    { id: 5, name: "Bureau Classic Elite", price: "3,990€", image: "/placeholder.svg", description: "Bureau classique raffiné" },
-    { id: 6, name: "Bureau Modern Tech", price: "4,490€", image: "/placeholder.svg", description: "Bureau high-tech connecté" },
-    { id: 7, name: "Bureau Signature", price: "6,990€", image: "/placeholder.svg", description: "Bureau signature exclusif" },
-    { id: 8, name: "Bureau Élégance", price: "4,790€", image: "/placeholder.svg", description: "Bureau élégant et fonctionnel" },
-    { id: 9, name: "Bureau Prestige", price: "5,490€", image: "/placeholder.svg", description: "Bureau prestige haut de gamme" },
-    { id: 10, name: "Bureau Executive Supreme", price: "7,990€", image: "/placeholder.svg", description: "Bureau supreme luxe" }
+    { id: 1, name: "Bureau Présidentiel Excellence", price: "54,890 DH", image: "/placeholder.svg", description: "Bureau présidentiel en bois massif" },
+    { id: 2, name: "Bureau Direction Moderne", price: "41,690 DH", image: "/placeholder.svg", description: "Bureau de direction contemporain" },
+    { id: 3, name: "Bureau Executive Plus", price: "47,190 DH", image: "/placeholder.svg", description: "Bureau executive avec extensions" },
+    { id: 4, name: "Bureau Luxe Premium", price: "65,890 DH", image: "/placeholder.svg", description: "Bureau premium tout équipé" },
+    { id: 5, name: "Bureau Classic Elite", price: "43,890 DH", image: "/placeholder.svg", description: "Bureau classique raffiné" },
+    { id: 6, name: "Bureau Modern Tech", price: "49,390 DH", image: "/placeholder.svg", description: "Bureau high-tech connecté" },
+    { id: 7, name: "Bureau Signature", price: "76,890 DH", image: "/placeholder.svg", description: "Bureau signature exclusif" },
+    { id: 8, name: "Bureau Élégance", price: "52,690 DH", image: "/placeholder.svg", description: "Bureau élégant et fonctionnel" },
+    { id: 9, name: "Bureau Prestige", price: "60,390 DH", image: "/placeholder.svg", description: "Bureau prestige haut de gamme" },
+    { id: 10, name: "Bureau Executive Supreme", price: "87,890 DH", image: "/placeholder.svg", description: "Bureau supreme luxe" }
   ],
   tablesReunion: [
-    { id: 11, name: "Table Réunion Executive", price: "3,890€", image: "/placeholder.svg", description: "Table de réunion professionnelle" },
-    { id: 12, name: "Table Conférence Plus", price: "4,990€", image: "/placeholder.svg", description: "Table de conférence modulable" },
-    { id: 13, name: "Table Meeting Pro", price: "3,490€", image: "/placeholder.svg", description: "Table de réunion moderne" },
-    { id: 14, name: "Table Conseil Elite", price: "5,990€", image: "/placeholder.svg", description: "Table de conseil premium" },
-    { id: 15, name: "Table Réunion Tech", price: "4,290€", image: "/placeholder.svg", description: "Table connectée" },
-    { id: 16, name: "Table Conférence Luxe", price: "6,990€", image: "/placeholder.svg", description: "Table de conférence luxueuse" },
-    { id: 17, name: "Table Meeting Classic", price: "3,990€", image: "/placeholder.svg", description: "Table classique élégante" },
-    { id: 18, name: "Table Conseil Modern", price: "4,790€", image: "/placeholder.svg", description: "Table moderne design" },
-    { id: 19, name: "Table Réunion Premium", price: "5,490€", image: "/placeholder.svg", description: "Table premium exclusive" },
-    { id: 20, name: "Table Conférence Supreme", price: "7,990€", image: "/placeholder.svg", description: "Table supreme haut de gamme" }
+    { id: 11, name: "Table Réunion Executive", price: "42,790 DH", image: "/placeholder.svg", description: "Table de réunion professionnelle" },
+    { id: 12, name: "Table Conférence Plus", price: "54,890 DH", image: "/placeholder.svg", description: "Table de conférence modulable" },
+    { id: 13, name: "Table Meeting Pro", price: "38,390 DH", image: "/placeholder.svg", description: "Table de réunion moderne" },
+    { id: 14, name: "Table Conseil Elite", price: "65,890 DH", image: "/placeholder.svg", description: "Table de conseil premium" },
+    { id: 15, name: "Table Réunion Tech", price: "47,190 DH", image: "/placeholder.svg", description: "Table connectée" },
+    { id: 16, name: "Table Conférence Luxe", price: "76,890 DH", image: "/placeholder.svg", description: "Table de conférence luxueuse" },
+    { id: 17, name: "Table Meeting Classic", price: "43,890 DH", image: "/placeholder.svg", description: "Table classique élégante" },
+    { id: 18, name: "Table Conseil Modern", price: "52,690 DH", image: "/placeholder.svg", description: "Table moderne design" },
+    { id: 19, name: "Table Réunion Premium", price: "60,390 DH", image: "/placeholder.svg", description: "Table premium exclusive" },
+    { id: 20, name: "Table Conférence Supreme", price: "87,890 DH", image: "/placeholder.svg", description: "Table supreme haut de gamme" }
   ],
   bibliotheques: [
-    { id: 21, name: "Bibliothèque Corporate", price: "2,990€", image: "/placeholder.svg", description: "Bibliothèque professionnelle" },
-    { id: 22, name: "Bibliothèque Executive", price: "3,990€", image: "/placeholder.svg", description: "Bibliothèque executive" },
-    { id: 23, name: "Bibliothèque Modern", price: "2,790€", image: "/placeholder.svg", description: "Bibliothèque moderne" },
-    { id: 24, name: "Bibliothèque Classic", price: "3,490€", image: "/placeholder.svg", description: "Bibliothèque classique" },
-    { id: 25, name: "Bibliothèque Premium", price: "4,990€", image: "/placeholder.svg", description: "Bibliothèque premium" },
-    { id: 26, name: "Bibliothèque Luxe", price: "5,990€", image: "/placeholder.svg", description: "Bibliothèque luxe" },
-    { id: 27, name: "Bibliothèque Elite", price: "4,490€", image: "/placeholder.svg", description: "Bibliothèque elite" },
-    { id: 28, name: "Bibliothèque Pro", price: "3,790€", image: "/placeholder.svg", description: "Bibliothèque professionnelle" },
-    { id: 29, name: "Bibliothèque Supreme", price: "6,990€", image: "/placeholder.svg", description: "Bibliothèque supreme" },
-    { id: 30, name: "Bibliothèque Signature", price: "7,990€", image: "/placeholder.svg", description: "Bibliothèque signature" }
+    { id: 21, name: "Bibliothèque Corporate", price: "32,890 DH", image: "/placeholder.svg", description: "Bibliothèque professionnelle" },
+    { id: 22, name: "Bibliothèque Executive", price: "43,890 DH", image: "/placeholder.svg", description: "Bibliothèque executive" },
+    { id: 23, name: "Bibliothèque Modern", price: "30,690 DH", image: "/placeholder.svg", description: "Bibliothèque moderne" },
+    { id: 24, name: "Bibliothèque Classic", price: "38,390 DH", image: "/placeholder.svg", description: "Bibliothèque classique" },
+    { id: 25, name: "Bibliothèque Premium", price: "54,890 DH", image: "/placeholder.svg", description: "Bibliothèque premium" },
+    { id: 26, name: "Bibliothèque Luxe", price: "65,890 DH", image: "/placeholder.svg", description: "Bibliothèque luxe" },
+    { id: 27, name: "Bibliothèque Elite", price: "49,390 DH", image: "/placeholder.svg", description: "Bibliothèque elite" },
+    { id: 28, name: "Bibliothèque Pro", price: "41,690 DH", image: "/placeholder.svg", description: "Bibliothèque professionnelle" },
+    { id: 29, name: "Bibliothèque Supreme", price: "76,890 DH", image: "/placeholder.svg", description: "Bibliothèque supreme" },
+    { id: 30, name: "Bibliothèque Signature", price: "87,890 DH", image: "/placeholder.svg", description: "Bibliothèque signature" }
   ]
 };
 
