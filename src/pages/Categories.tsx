@@ -4,172 +4,52 @@ import { ArrowLeft } from 'lucide-react';
 
 const categories = {
   chairs: [
-    {
-      id: 1,
-      name: "Fauteuil Signature Milano",
-      price: "32,890 DH",
-      description: "Fauteuil design italien en cuir pleine fleur",
-      image: "/placeholder.svg",
-      color: "Cognac"
-    },
-    {
-      id: 2,
-      name: "Bergère Royale",
-      price: "28,990 DH",
-      description: "Bergère classique en velours premium",
-      image: "/placeholder.svg",
-      color: "Bleu nuit"
-    },
-    {
-      id: 3,
-      name: "Fauteuil Lounge Nordic",
-      price: "24,590 DH",
-      description: "Design scandinave en chêne massif et tissu bouclette",
-      image: "/placeholder.svg",
-      color: "Écru"
-    },
-    {
-      id: 4,
-      name: "Chaise Médaillon Versailles",
-      price: "18,790 DH",
-      description: "Chaise style Louis XVI en hêtre sculpté",
-      image: "/placeholder.svg",
-      color: "Or vieilli"
-    },
-    {
-      id: 5,
-      name: "Fauteuil Club Vintage",
-      price: "26,990 DH",
-      description: "Cuir pleine fleur patiné main",
-      image: "/placeholder.svg",
-      color: "Havane"
-    }
+    { id: 1, name: "Fauteuil Élégance", price: "14,190 DH", image: "/placeholder.svg", description: "Fauteuil contemporain en velours" },
+    { id: 2, name: "Chaise Royale", price: "9,790 DH", image: "/placeholder.svg", description: "Chaise design en cuir véritable" },
+    { id: 3, name: "Bergère Louis XV", price: "27,390 DH", image: "/placeholder.svg", description: "Bergère style Louis XV" },
+    { id: 4, name: "Fauteuil Modern Art", price: "19,690 DH", image: "/placeholder.svg", description: "Fauteuil design contemporain" },
+    { id: 5, name: "Chaise Scandinave", price: "6,490 DH", image: "/placeholder.svg", description: "Design minimaliste nordique" },
+    { id: 6, name: "Fauteuil Club", price: "16,390 DH", image: "/placeholder.svg", description: "Cuir pleine fleur patiné" },
+    { id: 7, name: "Chaise Art Déco", price: "10,890 DH", image: "/placeholder.svg", description: "Style années 20" },
+    { id: 8, name: "Fauteuil Zen", price: "13,090 DH", image: "/placeholder.svg", description: "Inspiration japonaise" },
+    { id: 9, name: "Chaise Industrial", price: "8,690 DH", image: "/placeholder.svg", description: "Style industriel vintage" },
+    { id: 10, name: "Fauteuil Cosy", price: "15,290 DH", image: "/placeholder.svg", description: "Ultra confortable" }
   ],
   diningTables: [
-    {
-      id: 11,
-      name: "Table Emperador",
-      price: "54,890 DH",
-      description: "Table en marbre et bronze doré",
-      image: "/placeholder.svg",
-      color: "Marbre noir"
-    },
-    {
-      id: 12,
-      name: "Table Artisan",
-      price: "48,990 DH",
-      description: "Noyer massif avec marqueterie",
-      image: "/placeholder.svg",
-      color: "Noyer"
-    },
-    {
-      id: 13,
-      name: "Table Contemporaine Elite",
-      price: "42,790 DH",
-      description: "Céramique et acier brossé",
-      image: "/placeholder.svg",
-      color: "Gris titanium"
-    },
-    {
-      id: 14,
-      name: "Table Extensible Luxe",
-      price: "38,990 DH",
-      description: "Chêne massif avec rallonges intégrées",
-      image: "/placeholder.svg",
-      color: "Chêne naturel"
-    },
-    {
-      id: 15,
-      name: "Table Design Épuré",
-      price: "45,890 DH",
-      description: "Verre trempé et base en acier",
-      image: "/placeholder.svg",
-      color: "Transparent/Or"
-    }
+    { id: 11, name: "Table Majestueuse", price: "32,890 DH", image: "/placeholder.svg", description: "Table en chêne massif" },
+    { id: 12, name: "Table Empire", price: "38,390 DH", image: "/placeholder.svg", description: "Style empire français" },
+    { id: 13, name: "Table Contemporaine", price: "25,190 DH", image: "/placeholder.svg", description: "Design épuré moderne" },
+    { id: 14, name: "Table Extensible", price: "21,890 DH", image: "/placeholder.svg", description: "Pratique et élégante" },
+    { id: 15, name: "Table Ronde Art Déco", price: "30,690 DH", image: "/placeholder.svg", description: "Inspiration années 20" },
+    { id: 16, name: "Table Industrielle", price: "20,790 DH", image: "/placeholder.svg", description: "Style atelier" },
+    { id: 17, name: "Table Scandinave", price: "18,590 DH", image: "/placeholder.svg", description: "Minimalisme nordique" },
+    { id: 18, name: "Table Rustique", price: "27,390 DH", image: "/placeholder.svg", description: "Bois ancien" },
+    { id: 19, name: "Table Moderne", price: "24,090 DH", image: "/placeholder.svg", description: "Design contemporain" },
+    { id: 20, name: "Table Classic", price: "31,790 DH", image: "/placeholder.svg", description: "Style intemporel" }
   ],
   armchairs: [
-    {
-      id: 21,
-      name: "Fauteuil Capitonné Luxe",
-      price: "34,890 DH",
-      description: "Velours italien et finitions dorées",
-      image: "/placeholder.svg",
-      color: "Vert émeraude"
-    },
-    {
-      id: 22,
-      name: "Fauteuil Art Déco",
-      price: "29,990 DH",
-      description: "Design années 20 revisité",
-      image: "/placeholder.svg",
-      color: "Rose poudré"
-    },
-    {
-      id: 23,
-      name: "Fauteuil Relax Premium",
-      price: "42,790 DH",
-      description: "Cuir pleine fleur avec repose-pieds",
-      image: "/placeholder.svg",
-      color: "Noir"
-    },
-    {
-      id: 24,
-      name: "Fauteuil Contemporain",
-      price: "31,890 DH",
-      description: "Design minimaliste en tissu noble",
-      image: "/placeholder.svg",
-      color: "Gris perle"
-    },
-    {
-      id: 25,
-      name: "Fauteuil Baroque",
-      price: "36,990 DH",
-      description: "Style baroque avec dorures",
-      image: "/placeholder.svg",
-      color: "Doré/Crème"
-    }
+    { id: 21, name: "Bergère Luxe", price: "32,890 DH", image: "/placeholder.svg", description: "Velours premium" },
+    { id: 22, name: "Fauteuil Club Vintage", price: "27,390 DH", image: "/placeholder.svg", description: "Cuir patiné" },
+    { id: 23, name: "Fauteuil Design", price: "21,890 DH", image: "/placeholder.svg", description: "Style contemporain" },
+    { id: 24, name: "Fauteuil Scandinave", price: "16,390 DH", image: "/placeholder.svg", description: "Confort nordique" },
+    { id: 25, name: "Fauteuil Art Déco", price: "25,190 DH", image: "/placeholder.svg", description: "Élégance années 20" },
+    { id: 26, name: "Fauteuil Relax", price: "20,790 DH", image: "/placeholder.svg", description: "Ultra confortable" },
+    { id: 27, name: "Fauteuil Modern", price: "19,690 DH", image: "/placeholder.svg", description: "Design actuel" },
+    { id: 28, name: "Fauteuil Classic", price: "24,090 DH", image: "/placeholder.svg", description: "Style traditionnel" },
+    { id: 29, name: "Fauteuil Cosy", price: "18,590 DH", image: "/placeholder.svg", description: "Douceur et confort" },
+    { id: 30, name: "Fauteuil Luxe", price: "31,790 DH", image: "/placeholder.svg", description: "Haut de gamme" }
   ],
   sofas: [
-    {
-      id: 31,
-      name: "Canapé Chesterfield Royal",
-      price: "89,890 DH",
-      description: "Cuir capitonné fait main",
-      image: "/placeholder.svg",
-      color: "Marron vintage"
-    },
-    {
-      id: 32,
-      name: "Canapé d'Angle Prestige",
-      price: "94,990 DH",
-      description: "Grand confort en L avec méridienne",
-      image: "/placeholder.svg",
-      color: "Gris anthracite"
-    },
-    {
-      id: 33,
-      name: "Canapé Design Italien",
-      price: "76,890 DH",
-      description: "Lignes épurées et cuir premium",
-      image: "/placeholder.svg",
-      color: "Blanc cassé"
-    },
-    {
-      id: 34,
-      name: "Canapé Modulable Luxe",
-      price: "82,990 DH",
-      description: "Configuration personnalisable",
-      image: "/placeholder.svg",
-      color: "Beige"
-    },
-    {
-      id: 35,
-      name: "Canapé 3 Places Excellence",
-      price: "68,890 DH",
-      description: "Velours mohair et pieds en laiton",
-      image: "/placeholder.svg",
-      color: "Bleu paon"
-    }
+    { id: 31, name: "Canapé Royal", price: "54,890 DH", image: "/placeholder.svg", description: "3 places luxe" },
+    { id: 32, name: "Canapé Modern", price: "43,890 DH", image: "/placeholder.svg", description: "Design contemporain" },
+    { id: 33, name: "Canapé d'Angle", price: "60,390 DH", image: "/placeholder.svg", description: "Grand confort" },
+    { id: 34, name: "Canapé Chesterfield", price: "49,390 DH", image: "/placeholder.svg", description: "Style anglais" },
+    { id: 35, name: "Canapé Scandinave", price: "32,890 DH", image: "/placeholder.svg", description: "Style nordique" },
+    { id: 36, name: "Canapé Convertible", price: "38,390 DH", image: "/placeholder.svg", description: "Pratique et élégant" },
+    { id: 37, name: "Canapé Vintage", price: "41,690 DH", image: "/placeholder.svg", description: "Style rétro" },
+    { id: 38, name: "Canapé Design", price: "47,190 DH", image: "/placeholder.svg", description: "Ligne épurée" },
+    { id: 39, name: "Canapé Classic", price: "42,790 DH", image: "/placeholder.svg", description: "Intemporel" },
+    { id: 40, name: "Canapé Luxe", price: "65,890 DH", image: "/placeholder.svg", description: "Haut de gamme" }
   ]
 };
 
