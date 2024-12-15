@@ -6,7 +6,7 @@ const furniture = [
   {
     id: 1,
     name: "Fauteuil Hilsen",
-    price: "2,490€",
+    price: "27,390 DH",
     description: "Fauteuil contemporain en tissu bouclette, base dorée rotative",
     image: "/lovable-uploads/91a72674-b727-49fb-b0e6-91d7485a3c03.png",
     color: "Crème"
@@ -14,7 +14,7 @@ const furniture = [
   {
     id: 2,
     name: "Canapé Cloud",
-    price: "4,990€",
+    price: "54,890 DH",
     description: "Canapé moderne en tissu bouclette avec base dorée",
     image: "/lovable-uploads/072cd52d-9dd1-4f7c-8739-c9da05f72ae4.png",
     color: "Blanc cassé"
@@ -22,7 +22,7 @@ const furniture = [
   {
     id: 3,
     name: "Table Milano",
-    price: "3,990€",
+    price: "43,890 DH",
     description: "Table en bois massif hêtre plaquage noyer naturel",
     image: "/lovable-uploads/43978cc1-d560-4536-b09f-c3d8b05d158f.png",
     color: "Noyer naturel"
@@ -30,7 +30,7 @@ const furniture = [
   {
     id: 4,
     name: "Chaises Vitalia",
-    price: "1,980 DH HT",
+    price: "21,780 DH",
     description: "Chaise bois hêtre massif Similicuir de votre choix",
     image: "/lovable-uploads/2627fbb2-97e6-4db9-86ac-3ee1817a5aff.png",
     color: "Taupe"
