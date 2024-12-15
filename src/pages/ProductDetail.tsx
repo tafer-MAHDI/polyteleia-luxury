@@ -13,7 +13,7 @@ const ProductDetail = () => {
   const product = {
     id: Number(id),
     name: "Produit Luxueux",
-    price: "4,990€",
+    price: "54,890 DH",
     description: "Description détaillée du produit de luxe",
     image: "/placeholder.svg",
     details: [
