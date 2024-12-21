@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import CartIcon from './CartIcon';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,18 +21,22 @@ const Navigation = () => {
           POLYTELEIA LUXURY
         </a>
         
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex space-x-8 items-center">
           <a href="#about" className="text-dark hover:text-gold transition-colors">À propos</a>
           <a href="#projects" className="text-dark hover:text-gold transition-colors">Projets</a>
           <a href="#services" className="text-dark hover:text-gold transition-colors">Services</a>
           <a href="#woodwork" className="text-dark hover:text-gold transition-colors">Menuiserie</a>
           <a href="#chairs" className="text-dark hover:text-gold transition-colors">Ameublement</a>
           <a href="#contact" className="text-dark hover:text-gold transition-colors">Contact</a>
+          <CartIcon />
         </div>
 
-        <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          {isMenuOpen ? <X /> : <Menu />}
-        </button>
+        <div className="md:hidden flex items-center gap-4">
+          <CartIcon />
+          <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? <X /> : <Menu />}
+          </button>
+        </div>
       </div>
 
       {isMenuOpen && (

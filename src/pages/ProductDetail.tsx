@@ -1,13 +1,15 @@
 import { useParams } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, MessageCircle } from 'lucide-react';
+import { ArrowLeft, MessageCircle, ShoppingCart } from 'lucide-react';
 import { useToast } from "@/components/ui/use-toast";
+import { useCart } from '@/contexts/CartContext';
 
 const ProductDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const { toast } = useToast();
+  const { dispatch } = useCart();
 
   // Simulation de données de produit
   const product = {
@@ -30,6 +32,19 @@ const ProductDetail = () => {
     },
     materials: ["Bois massif", "Cuir pleine fleur", "Métal brossé"],
     colors: ["Or", "Argent", "Bronze"]
+  };
+
+  const handleAddToCart = () => {
+    dispatch({
+      type: 'ADD_ITEM',
+      payload: {
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        image: product.image,
+        quantity: 1
+      }
+    });
   };
 
   const handleWhatsAppClick = () => {
@@ -119,13 +134,23 @@ const ProductDetail = () => {
               </div>
             </div>
 
-            <Button 
-              className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white py-6 text-lg flex items-center justify-center gap-2"
-              onClick={handleWhatsAppClick}
-            >
-              <MessageCircle className="w-6 h-6" />
-              Contacter sur WhatsApp
-            </Button>
+            <div className="flex gap-4">
+              <Button 
+                className="flex-1 bg-gold hover:bg-gold/90 text-white py-6 text-lg"
+                onClick={handleAddToCart}
+              >
+                <ShoppingCart className="w-6 h-6 mr-2" />
+                Ajouter au panier
+              </Button>
+
+              <Button 
+                className="flex-1 bg-[#25D366] hover:bg-[#128C7E] text-white py-6 text-lg"
+                onClick={handleWhatsAppClick}
+              >
+                <MessageCircle className="w-6 h-6 mr-2" />
+                Contacter sur WhatsApp
+              </Button>
+            </div>
           </div>
         </div>
       </div>
