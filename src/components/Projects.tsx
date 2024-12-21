@@ -2,10 +2,10 @@ import { useNavigate } from 'react-router-dom';
 
 const projects = [
   {
-    title: "Salon Moderne",
+    title: "Habillage Mural Luxueux",
     category: "Résidentiel",
-    image: "/lovable-uploads/e83c78e2-f919-49d2-aeac-fbdf32dc353a.png",
-    description: "Design contemporain avec cheminée intégrée"
+    image: "/lovable-uploads/db70da57-66c8-4649-b03d-276ca22d9976.png",
+    description: "Habillage mural en bois noble avec motifs chevrons et éclairage intégré"
   },
   {
     title: "Salon Oriental Luxueux",
