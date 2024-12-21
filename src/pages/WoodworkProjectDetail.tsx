@@ -1,14 +1,15 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import { ArrowLeft, MessageCircle } from 'lucide-react';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const projectImages = [
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg"
+  "/lovable-uploads/e98c7a38-8a1d-4d13-a051-464b475d8f48.png",
+  "/lovable-uploads/41bce79b-6f24-4fc8-a9f6-a60909e30392.png",
+  "/lovable-uploads/aceb1672-e8f9-4728-beb2-a96d1f224ab0.png",
+  "/lovable-uploads/843547f0-d01c-4448-97c0-d3a5fca0eafb.png",
+  "/lovable-uploads/9bc47a92-b7e7-409a-9162-2623b4464d96.png",
+  "/lovable-uploads/f635d505-e734-478c-b19a-27024e68f484.png"
 ];
 
 const WoodworkProjectDetail = () => {
@@ -16,7 +17,7 @@ const WoodworkProjectDetail = () => {
   const navigate = useNavigate();
 
   const handleWhatsAppContact = () => {
-    const message = `Bonjour, je suis intéressé(e) par votre projet de menuiserie. Pouvez-vous me donner plus d'informations ?`;
+    const message = `Bonjour, je suis intéressé(e) par votre projet de menuiserie Appartement Almaz. Pouvez-vous me donner plus d'informations ?`;
     window.open(`https://wa.me/+33000000000?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -35,48 +36,52 @@ const WoodworkProjectDetail = () => {
           </button>
 
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-2 gap-8 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               {projectImages.map((image, index) => (
                 <div
                   key={index}
                   className={`relative overflow-hidden rounded-lg ${
-                    index === 0 ? 'col-span-2 aspect-w-21 aspect-h-9' : 'aspect-w-16 aspect-h-9'
+                    index === 0 ? 'md:col-span-2' : ''
                   }`}
                 >
-                  <img
-                    src={image}
-                    alt={`Vue du projet ${index + 1}`}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  />
+                  <AspectRatio ratio={16/9}>
+                    <img
+                      src={image}
+                      alt={`Vue du projet Almaz ${index + 1}`}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </AspectRatio>
                 </div>
               ))}
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-xl">
-              <h1 className="text-4xl font-serif text-dark mb-4">Bibliothèque Sur Mesure</h1>
-              <p className="text-gold text-lg mb-6">Menuiserie d'Art</p>
+              <h1 className="text-4xl font-serif text-dark mb-4">Projet Appartement Almaz</h1>
+              <p className="text-gold text-lg mb-6">Menuiserie d'Art & Aménagement Intérieur</p>
               
               <div className="prose max-w-none">
                 <p className="text-gray-600 mb-6">
-                  Une bibliothèque sur mesure en chêne massif, alliant élégance classique et fonctionnalité moderne. 
-                  Chaque détail a été minutieusement sculpté pour créer une pièce unique qui s'intègre parfaitement 
-                  dans son environnement.
+                  Un projet d'exception alliant élégance contemporaine et savoir-faire artisanal. 
+                  Cet appartement de luxe a été entièrement habillé de boiseries sur mesure, 
+                  créant une atmosphère à la fois moderne et chaleureuse.
                 </p>
 
                 <h2 className="text-2xl font-serif text-dark mt-8 mb-4">Caractéristiques du projet</h2>
                 <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                  <li>Essence de bois : Chêne massif</li>
-                  <li>Dimensions : 4m x 3m</li>
-                  <li>Finition : Vernis mat noble</li>
-                  <li>Détails sculptés à la main</li>
-                  <li>Système d'éclairage intégré</li>
+                  <li>Boiseries murales en noyer américain</li>
+                  <li>Motifs chevrons et lamelles verticales</li>
+                  <li>Éclairage LED intégré</li>
+                  <li>Niches décoratives rétroéclairées</li>
+                  <li>Finition vernis mat noble</li>
+                  <li>Mobilier sur mesure intégré</li>
                 </ul>
 
-                <h2 className="text-2xl font-serif text-dark mt-8 mb-4">Notre approche</h2>
+                <h2 className="text-2xl font-serif text-dark mt-8 mb-4">Détails techniques</h2>
                 <p className="text-gray-600 mb-6">
-                  Chaque élément de cette bibliothèque a été pensé pour créer un équilibre parfait entre 
-                  esthétique et praticité. Les sculptures ont été réalisées à la main par nos artisans, 
-                  perpétuant ainsi les traditions de la menuiserie d'art française.
+                  Les panneaux muraux ont été réalisés en noyer américain sélectionné, 
+                  avec un motif chevron central et des lamelles verticales latérales. 
+                  L'ensemble est rehaussé par un système d'éclairage LED intégré, 
+                  créant une ambiance luxueuse et contemporaine.
                 </p>
 
                 <button
