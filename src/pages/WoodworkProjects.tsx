@@ -7,8 +7,8 @@ const woodworkProjects = [
     id: 1,
     title: "Habillage Mural Art Déco",
     category: "Habillage Mural",
-    image: "/placeholder.svg",
-    description: "Habillage mural en bois précieux avec motifs Art Déco"
+    image: "/lovable-uploads/95cb7086-af6d-470a-ae61-e49821a5d2e3.png",
+    description: "Habillage mural en noyer avec motifs chevrons et éclairage intégré"
   },
   {
     id: 2,
