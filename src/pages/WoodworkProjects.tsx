@@ -5,10 +5,10 @@ import { ArrowLeft } from 'lucide-react';
 const woodworkProjects = [
   {
     id: 1,
-    title: "Habillage Mural Art Déco",
-    category: "Habillage Mural",
-    image: "/lovable-uploads/95cb7086-af6d-470a-ae61-e49821a5d2e3.png",
-    description: "Habillage mural en noyer avec motifs chevrons et éclairage intégré"
+    title: "Cuisine Contemporaine",
+    category: "Cuisine",
+    image: "/lovable-uploads/f2c7ef1e-dc17-4d0c-9710-3cb5cae61eea.png",
+    description: "Cuisine moderne avec rangements intégrés et plan de travail en marbre"
   },
   {
     id: 2,
