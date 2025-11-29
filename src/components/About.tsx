@@ -22,7 +22,7 @@ const About = () => {
           </div>
           <div className="relative h-[500px] overflow-hidden rounded-lg shadow-xl bg-dark">
             <img
-              src="/lovable-uploads/54eeddaa-c942-41fc-b80c-6b670c49965d.png"
+              src="/lovable-uploads/ceo-photo.jpg"
               alt="Mr TAFER ELMAHDI - CEO"
               className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
             />
