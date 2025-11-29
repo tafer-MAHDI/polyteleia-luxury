@@ -3,12 +3,13 @@ import Navigation from '../components/Navigation';
 import { ArrowLeft } from 'lucide-react';
 
 const projectImages = [
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg",
-  "/placeholder.svg"
+  "/lovable-uploads/villa-moderne-1.jpg",
+  "/lovable-uploads/villa-moderne-2.jpg",
+  "/lovable-uploads/villa-moderne-3.jpg",
+  "/lovable-uploads/villa-moderne-4.jpg",
+  "/lovable-uploads/villa-moderne-5.jpg",
+  "/lovable-uploads/villa-moderne-6.jpg",
+  "/lovable-uploads/villa-moderne-7.jpg"
 ];
 
 const ProjectDetail = () => {
@@ -48,28 +49,30 @@ const ProjectDetail = () => {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-xl">
-              <h1 className="text-4xl font-serif text-dark mb-4">Projet Villa Méditerranéenne</h1>
+              <h1 className="text-4xl font-serif text-dark mb-4">Villa Moderne Luxueuse</h1>
               <p className="text-gold text-lg mb-6">Résidentiel</p>
               
               <div className="prose max-w-none">
                 <p className="text-gray-600 mb-6">
-                  Une villa contemporaine d'exception située sur les hauteurs de la Méditerranée. 
-                  Ce projet incarne l'alliance parfaite entre luxe moderne et architecture méditerranéenne traditionnelle.
+                  Un projet d'architecture d'intérieur contemporain alliant élégance et sophistication. 
+                  Boiseries sculptées, éclairage intégré et mobilier sur mesure créent une atmosphère raffinée et chaleureuse.
                 </p>
 
                 <h2 className="text-2xl font-serif text-dark mt-8 mb-4">Caractéristiques du projet</h2>
                 <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                  <li>Surface habitable : 450m²</li>
-                  <li>Durée du projet : 18 mois</li>
-                  <li>Matériaux nobles : Pierre naturelle, bois précieux, verre</li>
-                  <li>Design sur mesure</li>
-                  <li>Vue panoramique sur la mer</li>
+                  <li>Surface habitable : 380m²</li>
+                  <li>Durée du projet : 14 mois</li>
+                  <li>Matériaux nobles : Noyer, marbre, bois massif</li>
+                  <li>Éclairage LED intégré sur mesure</li>
+                  <li>Mobilier contemporain luxueux</li>
+                  <li>Plafonds architecturaux avec moulures</li>
                 </ul>
 
                 <h2 className="text-2xl font-serif text-dark mt-8 mb-4">Notre approche</h2>
                 <p className="text-gray-600 mb-6">
-                  Chaque détail a été pensé pour créer une harmonie parfaite entre intérieur et extérieur, 
-                  maximisant la lumière naturelle et les vues spectaculaires tout en préservant l'intimité des occupants.
+                  Chaque espace a été conçu pour maximiser le confort et l'élégance, avec une attention particulière 
+                  aux détails architecturaux, aux textures et à l'harmonie des couleurs. Les boiseries sur mesure et 
+                  l'éclairage d'ambiance créent une atmosphère unique et sophistiquée.
                 </p>
               </div>
             </div>

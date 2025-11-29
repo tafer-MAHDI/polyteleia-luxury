@@ -5,10 +5,10 @@ import { ArrowLeft } from 'lucide-react';
 const allProjects = [
   {
     id: 1,
-    title: "Villa Méditerranéenne",
+    title: "Villa Moderne Luxueuse",
     category: "Résidentiel",
-    image: "/placeholder.svg",
-    description: "Une villa contemporaine avec vue sur la Méditerranée"
+    image: "/lovable-uploads/villa-moderne-1.jpg",
+    description: "Design contemporain avec boiseries élégantes et éclairage d'ambiance"
   },
   {
     id: 2,
