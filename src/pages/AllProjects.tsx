@@ -12,10 +12,10 @@ const allProjects = [
   },
   {
     id: 2,
-    title: "Penthouse Parisien",
+    title: "Palais à Rabat",
     category: "Résidentiel",
-    image: "/placeholder.svg",
-    description: "Un penthouse luxueux au cœur de Paris"
+    image: "/lovable-uploads/palais-rabat-1.jpg",
+    description: "Architecture palatiale avec finitions luxueuses et design contemporain"
   },
   {
     id: 3,
