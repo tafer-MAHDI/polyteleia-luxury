@@ -4,8 +4,6 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Services from "../components/Services";
 import WoodworkSection from "../components/WoodworkSection";
-import Chairs from "../components/Chairs";
-import ProfessionalFurniture from "../components/ProfessionalFurniture";
 import Contact from "../components/Contact";
 
 const Index = () => {
@@ -17,8 +15,6 @@ const Index = () => {
       <Projects />
       <Services />
       <WoodworkSection />
-      <Chairs />
-      <ProfessionalFurniture />
       <Contact />
     </div>
   );
