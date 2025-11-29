@@ -2,28 +2,40 @@ import { useNavigate } from 'react-router-dom';
 
 const projects = [
   {
-    title: "Salon Moderne",
-    category: "Résidentiel",
-    image: "/lovable-uploads/e83c78e2-f919-49d2-aeac-fbdf32dc353a.png",
-    description: "Design contemporain avec cheminée intégrée"
+    title: "Espace Lounge Contemporain",
+    category: "Commercial",
+    image: "/lovable-uploads/project-1.jpg",
+    description: "Design moderne avec plafonds circulaires et éclairage d'ambiance"
   },
   {
-    title: "Salon Oriental Luxueux",
+    title: "Salon Élégant",
     category: "Résidentiel",
-    image: "/lovable-uploads/8a047a60-bbee-4c91-a77a-9b57b7009657.png",
-    description: "Salon luxueux avec finitions dorées et luminaires d'exception"
+    image: "/lovable-uploads/project-2.jpg",
+    description: "Habillage mural sophistiqué avec finitions luxueuses"
   },
   {
-    title: "Espace Piscine",
-    category: "Extérieur",
-    image: "/lovable-uploads/2d0cfbbb-37d1-4233-bf0a-9e63e4a80e78.png",
-    description: "Aménagement extérieur avec piscine"
+    title: "Salon Prestige",
+    category: "Résidentiel",
+    image: "/lovable-uploads/project-3.jpg",
+    description: "Espace de réception avec luminaires sculptés et détails dorés"
   },
   {
-    title: "Salon Contemporain",
+    title: "Boutique Parfumerie",
+    category: "Commercial",
+    image: "/lovable-uploads/project-4.jpg",
+    description: "Aménagement luxueux avec arches dorées et éclairage intégré"
+  },
+  {
+    title: "Studio Contemporain",
     category: "Résidentiel",
-    image: "/lovable-uploads/2151b781-b997-4f47-b23e-637e9c9d3c4c.png",
-    description: "Design moderne avec éléments décoratifs raffinés"
+    image: "/lovable-uploads/project-5.jpg",
+    description: "Espace ouvert avec cuisine intégrée et finitions en marbre"
+  },
+  {
+    title: "Bureau Moderne",
+    category: "Commercial",
+    image: "/lovable-uploads/project-6.jpg",
+    description: "Espace de travail avec éléments naturels et design épuré"
   }
 ];
 
@@ -37,7 +49,7 @@ const Projects = () => {
           Nos Réalisations
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="project-card">
               <img
