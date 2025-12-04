@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+
 
 const projects = [
   {
@@ -40,7 +40,6 @@ const projects = [
 ];
 
 const Projects = () => {
-  const navigate = useNavigate();
 
   return (
     <section id="projects" className="py-20 bg-dark">
@@ -69,12 +68,14 @@ const Projects = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <button
-            onClick={() => navigate('/all-projects')}
+          <a
+            href="https://www.instagram.com/polyteleia_luxury_officiel"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-8 py-3 border-2 border-gold text-gold hover:bg-gold hover:text-light transition-all duration-500"
           >
             Voir plus de projets
-          </button>
+          </a>
         </div>
       </div>
     </section>
