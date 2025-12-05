@@ -67,6 +67,24 @@ const Projects = () => {
           ))}
         </div>
 
+        {/* Visite Virtuelle 360° */}
+        <div className="mt-16">
+          <h3 className="text-2xl md:text-3xl font-serif mb-8 text-light text-center">
+            Visite Virtuelle 360°
+          </h3>
+          <div className="flex justify-center">
+            <div className="w-full max-w-4xl aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                src="https://vtc.virtualtourscreator.com.au/share/77a222778f269ab996f317a93133fc4a" 
+                allowFullScreen
+                className="border-0"
+              />
+            </div>
+          </div>
+        </div>
+
         <div className="mt-12 text-center">
           <a
             href="https://www.instagram.com/polyteleia_luxury_officiel"
